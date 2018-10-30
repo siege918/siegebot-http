@@ -1,0 +1,15 @@
+{
+  "name": "siegebot-http",
+  "version": "0.0.1",
+  "description": "A Siegebot plugin that does simple HTTP requests and puts the result into a template",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "Siegebot",
+    "http"
+  ],
+  "author": "Siege",
+  "license": "MIT"
+}
