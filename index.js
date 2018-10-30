@@ -22,7 +22,11 @@ function getPromise(message, config, callback) {
 				}
 			);
 			response.on("end", function() {
-                var responseText = body.replace(/{response}/gm, body)
+                var responseText = body;
+                
+                if (config.template)
+                    responseText = config.template.replace(/{response}/gm, body);
+
                 message.channel.send(responseText);
                 callback(responseText);
 			});
